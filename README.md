@@ -91,3 +91,5 @@ Below is a figure illustrating the overall SoS. It shows how different component
   - Provides functions for setting text (with/without refresh), changing background color, and creating custom characters.
 
 ## 2. Digital Twin Folder
+
+This folder needs to be imported in GoDot
