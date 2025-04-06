@@ -1,0 +1,27 @@
+[gd_resource type="PlaneMesh" load_steps=5 format=3 uid="uid://yru2jlll8dos"]
+
+[ext_resource type="Shader" uid="uid://c7d7kiigmb7le" path="res://main.tres" id="1_q8ryt"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_m1c3a"]
+viewport_path = NodePath("Simulation")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ceg2r"]
+viewport_path = NodePath("Simulation")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f7voy"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_q8ryt")
+shader_parameter/amplitude = 0.5
+shader_parameter/refraction_strength = 0.1
+shader_parameter/deep_water = Color(0, 0.168627, 0.643137, 0.945098)
+shader_parameter/shallow_water = Color(0, 0.34902, 0.34902, 0.67451)
+shader_parameter/murkiness = 0.407
+shader_parameter/simulation2 = SubResource("ViewportTexture_ceg2r")
+shader_parameter/simulation = SubResource("ViewportTexture_m1c3a")
+
+[resource]
+material = SubResource("ShaderMaterial_f7voy")
+size = Vector2(10.1, 10.1)
+subdivide_width = 500
+subdivide_depth = 500
