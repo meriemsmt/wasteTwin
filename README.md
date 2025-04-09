@@ -1,6 +1,11 @@
 # Smart Waste Collection System and its Digital Twin
 
-This repository implements a Smart Waste Collection System based on a system-of-systems (SoS) architecture for smart city infrastructure management. Inside the /src folder, the project is divided into two main parts:
+This repository implements a Smart Waste Collection System based on a system-of-systems (SoS) architecture for smart city infrastructure management. 
+
+Please find the demonstrative video in: [Waste Twin demo](https://drive.google.com/file/d/1ZRTbiGp1LT4oiMSsg7zpik4K-JCUwKmJ/view?usp=drivesdk)
+
+
+Inside the /src folder, the project is divided into two main parts:
 
 - **Physical Twin:** Code running on physical devices (Raspberry Pi, sensors, actuators, etc.) that controls traffic lights, fleet trucks, and waste bin monitoring.
 - **Digital Twin:** Code developed in Godot that represents the Digital Twin (DT) and visualizes the physical system for digital monitoring and control.
@@ -25,6 +30,8 @@ Below is a figure illustrating the overall SoS. It shows how different component
    - Publishes sensor readings to the CS2, which then triggers waste collection of the closest truck.
 
 ## SoS DT Architecture
+
+![Digital Twin Architecture](figures/DT-arch.png)
 
 ## Folder Structure
 
